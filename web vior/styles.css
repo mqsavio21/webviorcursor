@@ -1,0 +1,446 @@
+:root {
+    --light-blue: #3498db;
+    --dark-blue: #2c3e50;
+    --yellow: #f1c40f;
+    --white: #ecf0f1;
+}
+
+.staff-card {
+    box-shadow: 0 4px 6px -1px rgba(255, 215, 0, 0.1), 0 2px 4px -1px rgba(255, 215, 0, 0.06);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.staff-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(255, 215, 0, 0.3), 0 4px 6px -2px rgba(255, 215, 0, 0.15);
+}
+
+.hero {
+    background-color: var(--light-blue);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--dark-blue);
+}
+
+.team-grid, .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-card, .news-card {
+    background-color: var(--light-blue);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-card:hover, .news-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img, .news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.team-card h3, .news-card h3 {
+    padding: 1rem;
+    margin: 0;
+    color: var(--white);
+}
+
+.news-card p {
+    padding: 0 1rem 1rem;
+    margin: 0;
+    color: var(--white);
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f1c40f;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f39c12;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #f1c40f rgba(255, 255, 255, 0.1);
+}
+
+/* Any other custom styles that can't be handled by Tailwind */
+
+/* Staff card styles */
+.staff-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.staff-card:hover {
+    transform: scale(1.05);
+}
+
+.staff-card img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.staff-card-content {
+    padding: 1.5rem;
+}
+
+.staff-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; /* Increased from 1.25rem */
+    font-weight: 700; /* Increased from 600 */
+    margin-bottom: 0.5rem;
+    color: #3498db;
+}
+
+.staff-card p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem; /* Increased from default */
+    color: #ecf0f1;
+    margin-bottom: 1rem;
+}
+
+.staff-card a {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+.staff-card a:hover {
+    color: #2c5282;
+}
+
+/* Grid layout for staff cards */
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .staff-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .staff-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.col-span-full {
+    grid-column: 1 / -1;
+}
+
+/* Founder section styles */
+#founder {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#founder h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem; /* Increased from 2.5rem */
+    font-weight: 800; /* Increased from 700 */
+    color: #3498db;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#founder p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.375rem; /* Increased from 1.25rem */
+    color: #ecf0f1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Staff grid styles */
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.staff-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+}
+
+.staff-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.staff-card-content {
+    padding: 1.5rem;
+}
+
+.staff-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #3498db;
+}
+
+.staff-card p {
+    color: #ecf0f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #founder h1 {
+        font-size: 2.5rem; /* Increased from 2rem */
+    }
+
+    #founder p {
+        font-size: 1.25rem; /* Increased from 1rem */
+    }
+
+    .staff-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Add these styles to your existing styles.css file */
+
+#founder .staff-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+#founder .staff-card:hover {
+    transform: translateY(-5px);
+}
+
+#founder .staff-card img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+#founder .staff-card-content {
+    padding: 1.5rem;
+}
+
+#founder .staff-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem; /* Increased from default */
+    font-weight: 700;
+    color: #3498db;
+}
+
+#founder .staff-card p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem; /* Increased from default */
+    color: #ecf0f1;
+}
+
+/* Add these styles to your existing styles.css file */
+
+#founder .flex {
+    justify-content: space-between;
+}
+
+#founder .md\:w-1\/3 {
+    padding-right: 2rem;
+}
+
+#founder .md\:w-2\/3 {
+    padding-left: 2rem;
+}
+
+#founder h2,
+#founder p {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    #founder .md\:w-1\/3,
+    #founder .md\:w-2\/3 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/* Remove the .news-grid styles and add About Us styles */
+.about-content h3 {
+    color: var(--dark-blue);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add these styles to your existing styles.css file */
+
+#teamCarousel {
+    scroll-behavior: smooth;
+}
+
+#teamCarousel > div {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+#teamCarousel > div > div {
+    flex: 0 0 auto;
+}
+
+#teamCarousel #prevBtn, 
+#teamCarousel #nextBtn {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#teamCarousel #prevBtn:hover, 
+#teamCarousel #nextBtn:hover {
+    opacity: 1;
+}
+
+#teamsCarousel {
+    scroll-behavior: smooth;
+}
+
+#teamsCarousel > div {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+#teamsCarousel > div > div {
+    flex: 0 0 auto;
+}
+
+#teamsCarousel #prevBtn, 
+#teamsCarousel #nextBtn {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#teamsCarousel #prevBtn:hover, 
+#teamsCarousel #nextBtn:hover {
+    opacity: 1;
+}
+
+/* Add these styles to your existing styles.css file */
+.h-screen {
+    height: 100vh;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.w-full {
+    width: 100vw;
+}
+
+/* Ensure the main content pushes down below the fixed header */
+main {
+    padding-top: 64px; /* Adjust this value to match your header height */
+}
+
+/* Optional: Adjust text shadow for better readability */
+/*
+.text-white {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+*/
+
+/* Ensure the section takes up full width, even if parent has padding */
+.relative.w-full {
+    width: 100%;
+    max-width: 100vw;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Remove or modify this rule */
+/*
+.text-white {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+*/
+
+/* Add a new, more specific class for text that needs shadow */
+.text-with-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.no-shadow {
+    text-shadow: none !important;
+}

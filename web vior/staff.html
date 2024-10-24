@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIOR Tower Community - Staff</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-blue-100 text-gray-800 flex flex-col min-h-full">
+    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-4 py-1">
+            <div class="flex justify-between items-center">
+                <div class="logo">
+                    <img src="logo.png" alt="VIOR Logo" class="w-24 h-auto">
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-800 hover:text-blue-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul id="menu" class="hidden md:flex md:space-x-4">
+                    <li><a href="index.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg no-shadow">Home</a></li>
+                    <li><a href="teams.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg no-shadow">Teams</a></li>
+                    <li><a href="about.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg no-shadow">About Us</a></li>
+                    <li><a href="academy.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg no-shadow">Academy</a></li>
+                    <li><a href="#affiliate" class="text-gray-800 hover:text-blue-600 font-semibold text-lg no-shadow">Affiliate</a></li>
+                    <li><a href="staff.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg no-shadow">Staffs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow pt-20">
+        <section class="bg-gradient-to-br from-gray-900 to-blue-900 text-white py-16">
+            <div class="container mx-auto px-4">
+                <div id="founder" class="mb-16 min-h-[80vh] flex items-center">
+                    <div class="flex flex-col md:flex-row justify-between items-start w-full">
+                        <div class="md:w-1/4 mb-8 md:mb-0 md:pr-8">
+                            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-left text-yellow-400 uppercase tracking-wider font-serif">The Founders of VIOR</h2>
+                            <p class="text-xl md:text-2xl mb-4 text-left">Meet the brilliant minds behind VIOR Tower Community's organization concept for nurturing gaming skills in VALORANT</p>
+                        </div>
+                        <div class="md:w-3/4 grid grid-cols-1 md:grid-cols-3 gap-8 md:pl-8">
+                            <a href="https://x.com/DokutahIM" target="_blank" rel="noopener noreferrer" class="staff-card w-full max-w-sm mx-auto cursor-pointer">
+                                <img src="haru.png" alt="HaruMiz - CEO and Founder" class="w-full h-96 object-cover object-top">
+                                <div class="staff-card-content p-4">
+                                    <h3 class="text-2xl font-semibold mb-1">HaruMiz</h3>
+                                    <p class="text-md">CEO, Founder</p>
+                                </div>
+                            </a>
+                            <a href="https://x.com/Roffi_Daijoubu" target="_blank" rel="noopener noreferrer" class="staff-card w-full max-w-sm mx-auto cursor-pointer">
+                                <img src="roffi.png" alt="Roffi Daijoubu - Head of Affiliates and Founder" class="w-full h-96 object-cover object-top">
+                                <div class="staff-card-content p-4">
+                                    <h3 class="text-2xl font-semibold mb-1">Roffi Daijoubu</h3>
+                                    <p class="text-md">Head of Affiliates, Founder</p>
+                                </div>
+                            </a>
+                            <a href="https://x.com/birdyov" target="_blank" rel="noopener noreferrer" class="staff-card w-full max-w-sm mx-auto cursor-pointer">
+                                <img src="vio.png" alt="Ovio Damion - Community Director and Founder" class="w-full h-96 object-cover object-top">
+                                <div class="staff-card-content p-4">
+                                    <h3 class="text-2xl font-semibold mb-1">Ovio Damion</h3>
+                                    <p class="text-md">Community Director, Founder</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Staff Grid -->
+                <div class="staff-grid">
+                    <!-- Esports Section -->
+                    <div class="col-span-full mb-8">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center text-yellow-400 uppercase tracking-wider font-serif">Valorant Staffs</h2>
+                    </div>
+                    
+                    <!-- Esports Cards - First Row -->
+                    <a href="https://x.com/DesaLeleWV" target="_blank" rel="noopener noreferrer" class="staff-card cursor-pointer">
+                        <img src="wisco.png" alt="Wisco Vans - VIOR Reverie Coach">
+                        <div class="staff-card-content">
+                            <h3>Wisco Vans</h3>
+                            <p>VIOR Reverie Coach</p>
+                        </div>
+                    </a>
+                    <a href="https://x.com/Its_Chaviii" target="_blank" rel="noopener noreferrer" class="staff-card cursor-pointer">
+                        <img src="chavi.png" alt="Chavilla Orvana - VIOR Eclipse Coach">
+                        <div class="staff-card-content">
+                            <h3>Chavilla Orvana</h3>
+                            <p>VIOR Eclipse Coach</p>
+                        </div>
+                    </a>
+                    <a href="https://x.com/Viveonn" target="_blank" rel="noopener noreferrer" class="staff-card cursor-pointer">
+                        <img src="shannon.png" alt="Shannon Lee Agatha - VIOR Eclipse Manager">
+                        <div class="staff-card-content">
+                            <h3>Shannon Lee Agatha</h3>
+                            <p>VIOR Eclipse Manager</p>
+                        </div>
+                    </a>
+                    <a href="https://x.com/KsrgMade" target="_blank" rel="noopener noreferrer" class="staff-card cursor-pointer">
+                        <img src="made.png" alt="Kisaragi Made - VIOR Bonafide Manager">
+                        <div class="staff-card-content">
+                            <h3>Kisaragi Made</h3>
+                            <p>VIOR Bonafide Manager</p>
+                        </div>
+                    </a>
+                    <a href="https://x.com/MigoHaswell" target="_blank" rel="noopener noreferrer" class="staff-card cursor-pointer">
+                        <img src="migo.png" alt="Migo Haswell - Private Instructor">
+                        <div class="staff-card-content">
+                            <h3>Migo Haswell</h3>
+                            <p>Private Instructor</p>
+                        </div>
+                    </a>
+
+                    <!-- Esports Cards - Second Row -->
+                    <a href="https://x.com/Yatacchi21m" target="_blank" rel="noopener noreferrer" class="staff-card cursor-pointer">
+                        <img src="yata.png" alt="Akazaya Riota - VIOR Vernalis Manager">
+                        <div class="staff-card-content">
+                            <h3>Akazaya Riota</h3>
+                            <p>VIOR Vernalis Manager</p>
+                        </div>
+                    </a>
+                    <a href="https://x.com/NeuviIIette" target="_blank" rel="noopener noreferrer" class="staff-card cursor-pointer">
+                        <img src="mimi.png" alt="Mimi Leclair - VIOR Aphrodite Manager">
+                        <div class="staff-card-content">
+                            <h3>Mimi Leclair</h3>
+                            <p>VIOR Aphrodite Manager</p>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="staff-card cursor-pointer">
+                        <img src="jo.png" alt="Johanes Martin - VIOR Reverie Manager">
+                        <div class="staff-card-content">
+                            <h3>Johanes Martin</h3>
+                            <p>VIOR Reverie Manager</p>
+                        </div>
+                    </a>
+                    <!-- Add more staff cards as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="mb-4 md:mb-0">&copy; 2024 VIOR Tower Community. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="https://x.com/ViOrTower" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-400 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@VernalisOrion" target="_blank" rel="noopener noreferrer" class="text-white hover:text-red-500 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://discord.gg/QFmu86a8Ak" target="_blank" rel="noopener noreferrer" class="text-white hover:text-indigo-400 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full opacity-70 hover:opacity-100 transition-opacity duration-300 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
