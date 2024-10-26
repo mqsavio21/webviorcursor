@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIOR Reverie</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-900 text-white">
+    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-4 py-1">
+            <div class="flex justify-between items-center">
+                <div class="logo">
+                    <img src="logo.png" alt="VIOR Logo" class="w-24 h-auto">
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-800 hover:text-blue-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul id="menu" class="hidden md:flex md:space-x-4">
+                    <li><a href="index.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg">Home</a></li>
+                    <li><a href="teams.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg">Teams</a></li>
+                    <li><a href="about.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg">About Us</a></li>
+                    <li><a href="academy.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg">Academy</a></li>
+                    <li><a href="#affiliate" class="text-gray-800 hover:text-blue-600 font-semibold text-lg">Affiliate</a></li>
+                    <li><a href="staff.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg">Staffs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow pt-24">
+        <!-- Team Members Section -->
+        <section id="team-members" class="py-16 bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h1 class="text-5xl font-bold mb-12 text-center text-white font-serif">VIOR Reverie</h1>
+                <div class="relative">
+                    <div id="teamMembersCarousel" class="overflow-hidden">
+                        <div class="flex transition-transform duration-300 ease-in-out">
+                            <!-- Team Member 1 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="flex flex-col md:flex-row items-center justify-between">
+                                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                        <h3 class="text-4xl font-bold mb-2 text-yellow-400 font-serif">Controller</h3>
+                                        <h3 class="text-4xl font-bold mb-4 text-white font-serif">Furamiingou "Furami"</h3>
+                                        <p class="text-lg text-gray-400 mb-4">Vtuber who has many variants based on her emotions. She is sometimes happy sometimes sad according to result of her valorant grinding matches. Rumour has it that she once throw grenade on a certain arctic fox.</p>
+                                        <div class="flex space-x-4">
+                                            <a href="https://x.com/furamiingou" class="text-white hover:text-red-600 transition-colors duration-300">
+                                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <div class="w-11/12 mx-auto h-96 overflow-hidden rounded-lg relative">
+                                            <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-yellow-600 opacity-75"></div>
+                                            <img src="furami.png" alt="Furamiingou 'Furami'" class="w-full h-full object-cover relative z-10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 2 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="flex flex-col md:flex-row items-center justify-between">
+                                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                        <h3 class="text-4xl font-bold mb-2 text-yellow-400 font-serif">Duelist</h3>
+                                        <h3 class="text-4xl font-bold mb-4 text-white font-serif">Mochi "Mochi" Poci</h3>
+                                        <p class="text-lg text-gray-400 mb-4">A cranky Arctic fox, who likes to use guardians to frag out the enemies. Mochi is a very dependable player who can play with strong and creative mindset.</p>
+                                        <div class="flex space-x-4">
+                                            <a href="https://x.com/mochichichi99" class="text-white hover:text-red-600 transition-colors duration-300">
+                                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <div class="w-11/12 mx-auto h-96 overflow-hidden rounded-lg relative">
+                                            <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-yellow-600 opacity-75"></div>
+                                            <img src="mochi.png" alt="Mochi 'Mochi' Poci" class="w-full h-full object-cover relative z-10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 3 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="flex flex-col md:flex-row items-center justify-between">
+                                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                        <h3 class="text-4xl font-bold mb-2 text-yellow-400 font-serif">Initiator</h3>
+                                        <h3 class="text-4xl font-bold mb-4 text-white font-serif">SwiftyGe "Swifty"</h3>
+                                        <p class="text-lg text-gray-400 mb-4">A slime from the world of Charise who likes to play Valorant. His mastery on initiator nowadays grant him a spot as one of the shotcaller in the team.</p>
+                                        <div class="flex space-x-4">
+                                            <a href="https://x.com/SwiftyGe" class="text-white hover:text-red-600 transition-colors duration-300">
+                                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <div class="w-11/12 mx-auto h-96 overflow-hidden rounded-lg relative">
+                                            <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-yellow-600 opacity-75"></div>
+                                            <img src="swifty.png" alt="SwiftyGe 'Swifty'" class="w-full h-full object-cover relative z-10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 4 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="flex flex-col md:flex-row items-center justify-between">
+                                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                        <h3 class="text-4xl font-bold mb-2 text-yellow-400 font-serif">Initiator</h2>
+                                        <h3 class="text-4xl font-bold mb-4 text-white font-serif">Dino Merah "Dino" Jambu</h3>
+                                        <p class="text-lg text-gray-400 mb-4">Triceratop Vtuber who recently started to play Valorant and already been trusted by her coaches to play in the big leagues. Her fast growth in Valorant is a testament to her willingness to learn.</p>
+                                        <div class="flex space-x-4">
+                                            <a href="https://x.com/Dino_MerahJambu" class="text-white hover:text-red-600 transition-colors duration-300">
+                                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <div class="w-11/12 mx-auto h-96 overflow-hidden rounded-lg relative">
+                                            <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-yellow-600 opacity-75"></div>
+                                            <img src="dino.png" alt="Dino Merah 'Dino' Jambu" class="w-full h-full object-cover relative z-10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 5 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="flex flex-col md:flex-row items-center justify-between">
+                                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                        <h3 class="text-4xl font-bold mb-2 text-yellow-400 font-serif">Sentinel</h2>
+                                        <h3 class="text-4xl font-bold mb-4 text-white font-serif">Zara "Zara" Azura</h3>
+                                        <p class="text-lg text-gray-400 mb-4">Apprentice lurker bear who is on the way to immortal rank with the circus troop Reverie. Her only concern is playing against VIOR master lurker, Haru.</p>
+                                        <div class="flex space-x-4">
+                                            <a href="https://x.com/Zara_Azurawr" class="text-white hover:text-red-600 transition-colors duration-300">
+                                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <div class="w-11/12 mx-auto h-96 overflow-hidden rounded-lg relative">
+                                            <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-yellow-600 opacity-75"></div>
+                                            <img src="zara.png" alt="Zara 'Zara' Azura" class="w-full h-full object-cover relative z-10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 6 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="flex flex-col md:flex-row items-center justify-between">
+                                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                        <h3 class="text-4xl font-bold mb-2 text-yellow-400 font-serif">Flex</h2>
+                                        <h3 class="text-4xl font-bold mb-4 text-white font-serif">Eufoe Ria</h3>
+                                        <p class="text-lg text-gray-400 mb-4">A mysterious girl from the unknown world. Meeting by chance by Haru and Wisco, he decides to join Reverie in the hope of finding a new home.</p>
+                                        <div class="flex space-x-4">
+                                            <a href="https://x.com/EufoeRia" class="text-white hover:text-red-600 transition-colors duration-300">
+                                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <div class="w-11/12 mx-auto h-96 overflow-hidden rounded-lg relative">
+                                            <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-yellow-600 opacity-75"></div>
+                                            <img src="ria.png" alt="Eufoe Ria" class="w-full h-full object-cover relative z-10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 7 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="flex flex-col md:flex-row items-center justify-between">
+                                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                        <h3 class="text-4xl font-bold mb-2 text-yellow-400 font-serif">Initiator</h2>
+                                        <h3 class="text-4xl font-bold mb-4 text-white font-serif">Kaia "Kyaruu" Kyaruu</h3>
+                                        <p class="text-lg text-gray-400 mb-4">Your little brother who likes to play various games. He decided to join Reverie to learn more about Valorant and to become a better competitiveplayer.</p>
+                                        <div class="flex space-x-4">
+                                            <a href="https://x.com/KaiaKyaruu" class="text-white hover:text-red-600 transition-colors duration-300">
+                                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <div class="w-11/12 mx-auto h-96 overflow-hidden rounded-lg relative">
+                                            <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-yellow-600 opacity-75"></div>
+                                            <img src="kyaruu.png" alt="Kaia 'Kyaruu' Kyaruu" class="w-full h-full object-cover relative z-10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 8 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="flex flex-col md:flex-row items-center justify-between">
+                                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                        <h3 class="text-4xl font-bold mb-2 text-yellow-400 font-serif">Initiator</h2>
+                                        <h3 class="text-4xl font-bold mb-4 text-white font-serif">Meridia "Eli" Elinor</h3>
+                                        <p class="text-lg text-gray-400 mb-4">An angel who is curious about the earth & wants to find something unique. She is here to gives out her expertise on playing initiator to the newly rising Reverie.</p>
+                                        <div class="flex space-x-4">
+                                            <a href="https://x.com/MeridiaElinor" class="text-white hover:text-red-600 transition-colors duration-300">
+                                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <div class="w-11/12 mx-auto h-96 overflow-hidden rounded-lg relative">
+                                            <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-yellow-600 opacity-75"></div>
+                                            <img src="eli.png" alt="Meridia 'Eli' Elinor" class="w-full h-full object-cover relative z-10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 9 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="flex flex-col md:flex-row items-center justify-between">
+                                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                        <h3 class="text-4xl font-bold mb-2 text-yellow-400 font-serif">Coach</h2>
+                                        <h3 class="text-4xl font-bold mb-4 text-white font-serif">Wisco "Wisco" Vans</h3>
+                                        <p class="text-lg text-gray-400 mb-4">Handsome, Charismatic, the one and only Wisco "Inheritage" Vans. That's all you need to know.</p>
+                                        <div class="flex space-x-4">
+                                            <a href="https://x.com/DesaLeleWV" class="text-white hover:text-red-600 transition-colors duration-300">
+                                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <div class="w-11/12 mx-auto h-96 overflow-hidden rounded-lg relative">
+                                            <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-yellow-600 opacity-75"></div>
+                                            <img src="wisco.png" alt="Wisco 'Wisco' Vans" class="w-full h-full object-cover relative z-10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 10 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="flex flex-col md:flex-row items-center justify-between">
+                                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                        <h3 class="text-4xl font-bold mb-2 text-yellow-400 font-serif">Manager</h2>
+                                        <h3 class="text-4xl font-bold mb-4 text-white font-serif">Johanes "Jo" Martin</h3>
+                                        <p class="text-lg text-gray-400 mb-4">Ghosted man for 4 months. He is now focusing on his work and Valorant development, helping Reverie the best he can.</p>
+                                        <div class="flex space-x-4">
+                                            <a href="#" class="text-white hover:text-red-600 transition-colors duration-300">
+                                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <div class="w-11/12 mx-auto h-96 overflow-hidden rounded-lg relative">
+                                            <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-yellow-600 opacity-75"></div>
+                                            <img src="jo.png" alt="Johanes 'Jo' Martin" class="w-full h-full object-cover relative z-10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between mt-8">
+                        <button id="teamPrevBtn" class="bg-yellow-400 text-black px-4 py-2 rounded-full hover:bg-yellow-600 transition-colors duration-300">
+                            Previous
+                        </button>
+                        <button id="teamNextBtn" class="bg-yellow-400 text-black px-4 py-2 rounded-full hover:bg-yellow-600 transition-colors duration-300">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <p>&copy; 2024 VIOR Tower Community. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="https://x.com/ViOrTower" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-400 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@ReverieOrion" target="_blank" rel="noopener noreferrer" class="text-white hover:text-red-500 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+                <a href="https://discord.gg/QFmu86a8Ak" target="_blank" rel="noopener noreferrer" class="text-white hover:text-indigo-400 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full opacity-70 hover:opacity-100 transition-opacity duration-300 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="teamscarousel.js"></script>
+</body>
+</html>

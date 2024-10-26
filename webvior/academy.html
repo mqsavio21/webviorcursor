@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Add this meta tag if it's not already present -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIOR Academy</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="flex flex-col min-h-screen bg-blue-100 text-gray-800 overflow-x-hidden">
+    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50 w-full">
+        <nav class="container mx-auto px-4 py-1">
+            <div class="flex justify-between items-center">
+                <div class="logo">
+                    <img src="logo.png" alt="VIOR Logo" class="w-24 h-auto">
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-800 hover:text-blue-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul id="menu" class="hidden md:flex md:space-x-4">
+                    <li><a href="index.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg">Home</a></li>
+                    <li><a href="teams.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg">Teams</a></li>
+                    <li><a href="about.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg">About Us</a></li>
+                    <li><a href="academy.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg">Academy</a></li>
+                    <li><a href="#affiliate" class="text-gray-800 hover:text-blue-600 font-semibold text-lg">Affiliate</a></li>
+                    <li><a href="staff.html" class="text-gray-800 hover:text-blue-600 font-semibold text-lg">Staffs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow w-full pt-16">
+        <section id="hero" class="relative bg-gradient-to-br from-blue-600 to-blue-900 text-white py-12 md:py-16 min-h-[300px] md:min-h-[400px] flex items-center">
+            <div class="absolute inset-0 bg-cover bg-center mix-blend-overlay" style="background-image: url('dash1.png'); opacity: 0.3;"></div>
+            <div class="absolute inset-0 bg-blue-500 opacity-30"></div>
+            <div class="container mx-auto text-center relative z-10 px-4">
+                <img src="logo.png" alt="VIOR Logo" class="w-48 h-auto mx-auto mt-4">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 drop-shadow-lg font-serif">VIOR Academy</h1>
+            </div>
+        </section>
+
+        <!-- About Academy Section -->
+        <section class="bg-white-500 text-black py-16 relative">
+            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('fracad.png');"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <p class="text-2xl text-black mb-6 leading-relaxed font-serif">
+                            VIOR Academy is an academy dedicated to fostering talent, promoting competitive gaming, and creating a community for passionate gamers. 
+                        </p>
+                        <p class="text-2xl text-black mb-6 leading-relaxed font-serif">
+                            VIOR encompasses principles to empower skills and elevate talents by creating our own academy for nurturing new talent.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="logo.png" alt="VIOR Logo" class="w-full h-auto max-w-md filter brightness-110">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="bg-gray-100 py-32 relative">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('valo.jpg');"></div>
+            <div class="absolute inset-0 bg-black opacity-70"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <h2 class="text-4xl font-bold mb-8 font-serif text-white">Our Programs</h2><br>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center relative z-10">
+                <div class="bg-gradient-to-br from-white to-blue-50 p-8 rounded-lg shadow-[0_0_20px_rgba(111,221,255,0.5)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(111,221,255,0.8)] hover:-translate-y-1">
+                    <h4 class="text-3xl font-bold text-blue-600 mb-3">Private Sessions</h4>
+                    <p class="text-gray-700">A comprehensive introduction to competitive gaming fundamentals.</p>
+                </div>
+                <div class="bg-gradient-to-br from-white to-blue-50 p-8 rounded-lg shadow-[0_0_20px_rgba(111,221,255,0.5)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(111,221,255,0.8)] hover:-translate-y-1">
+                    <h4 class="text-3xl font-bold text-blue-600 mb-3">Advanced Training Bootcamp</h4>
+                    <p class="text-gray-700">Intensive coaching for competitive players</p>
+                </div>
+                <div class="bg-gradient-to-br from-white to-blue-50 p-8 rounded-lg shadow-[0_0_20px_rgba(111,221,255,0.5)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(111,221,255,0.8)] hover:-translate-y-1">
+                    <h4 class="text-3xl font-bold text-blue-600 mb-3">Team Development</h4>
+                    <p class="text-gray-700">Specialized training for building cohesive and effective teams.</p>
+                </div>
+            </div>
+            <!-- New row with two additional program cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center relative z-10 mt-8">
+                <div class="bg-gradient-to-br from-white to-blue-50 p-8 rounded-lg shadow-[0_0_20px_rgba(111,221,255,0.5)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(111,221,255,0.8)] hover:-translate-y-1">
+                    <h4 class="text-3xl font-bold text-blue-600 mb-3">VOD Analysis</h4>
+                    <p class="text-gray-700">In-depth sessions focusing on you own gameplay and analysis.</p>
+                </div>
+                <div class="bg-gradient-to-br from-white to-blue-50 p-8 rounded-lg shadow-[0_0_20px_rgba(111,221,255,0.5)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(111,221,255,0.8)] hover:-translate-y-1">
+                    <h4 class="text-3xl font-bold text-blue-600 mb-3">Mental Conditioning</h4>
+                    <p class="text-gray-700">Programs designed to improve focus, resilience, and performance under pressure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coaches Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8 font-serif">Meet Our Coaches</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                    <!-- Coach 1 -->
+                    <div class="text-center">
+                        <img src="haru.png" alt="HaruMiz" class="w-40 h-40 rounded-full mx-auto mb-4 border-4 border-yellow-400">
+                        <h3 class="text-xl font-semibold">HaruMiz</h3>
+                        <p class="text-sm text-gray-600">Strategy & Mental Coach</p>
+                    </div>
+                    <!-- Coach 2 -->
+                    <div class="text-center">
+                        <img src="wisco.png" alt="Wisco Vans" class="w-40 h-40 rounded-full mx-auto mb-4 border-4 border-yellow-400">
+                        <h3 class="text-xl font-semibold">Wisco Vans</h3>
+                        <p class="text-sm text-gray-600">Tactical & Development Coach</p>
+                    </div>
+                    <!-- Coach 3 -->
+                    <div class="text-center">
+                        <img src="chavi.png" alt="Chavilla Orvana" class="w-40 h-40 rounded-full mx-auto mb-4 border-4 border-yellow-400">
+                        <h3 class="text-xl font-semibold">Chavilla Orvana</h3>
+                        <p class="text-sm text-gray-600">Individual & Teamwork Coach</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Coach 4 -->
+                    <div class="text-center">
+                        <img src="migo.png" alt="Migo Haswell" class="w-40 h-40 rounded-full mx-auto mb-4 border-4 border-yellow-400">
+                        <h3 class="text-xl font-semibold">Migo Haswell</h3>
+                        <p class="text-sm text-gray-600">Private Development Instructor</p>
+                    </div>
+                    <!-- Coach 5 -->
+                    <div class="text-center">
+                        <img src="shannon.png" alt="Shannon Lee Agatha" class="w-40 h-40 rounded-full mx-auto mb-4 border-4 border-yellow-400">
+                        <h3 class="text-xl font-semibold">Shannon Lee Agatha</h3>
+                        <p class="text-sm text-gray-600">VOD & Gameplay Analyst</p>
+                    </div>
+                    <!-- Coach 6 -->
+                    <div class="text-center">
+                        <img src="jo.png" alt="Johanes Martin" class="w-40 h-40 rounded-full mx-auto mb-4 border-4 border-yellow-400">
+                        <h3 class="text-xl font-semibold">Johanes Martin</h3>
+                        <p class="text-sm text-gray-600">Duel & Positioning Coach</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8 font-serif">What Our Students Say</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg shadow-blue-700/50">
+                        <p class="mb-4">"Orangnya seru-seru, gak ada yang baperan juga, walaupun makin lama rasanya makin banyak anomali-- Tapi itu serunya, banyak orang random jadi gak ngebosenin"</p>
+                        <p class="font-semibold">- Uta</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg shadow-blue-700/50">
+                        <p class="mb-4">"Di vior sendiri metode belajarnya sangat unik, variatif dan fresh yang membuat saya fokus dan enjoy progressnya 
+                            (Nempel sampe kebawa mimpi)"</p>
+                        <p class="font-semibold">- Mimi</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg shadow-blue-700/50">
+                        <p class="mb-4">"Ayo masuk Vior! disini kalian bisa cari temen mabar mau kamu Casual, Competitive atau pun Team-Play we have it all!"</p>
+                        <p class="font-semibold">- Swiftyge</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg shadow-blue-700/50">
+                        <p class="mb-4">"di VIOR banyak hal baru yang bisa dipelajari, aku pribadi jadi tau gimana main dalam tim, tau mekanik, pokoknya VIOR membantu banget buat improve skill valorant kalian"</p>
+                        <p class="font-semibold">- Luki Lokananta</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg shadow-blue-700/50">
+                        <p class="mb-4">"Coachnya macem macem ada yg galak ada yg lawak tapi ujungnya kocak"</p>
+                        <p class="font-semibold">- Seiji</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg shadow-blue-700/50">
+                        <p class="mb-4">"selama ini belajar di vior dari jaman masih jadi player sampe sekarang bisa jadi manager/assistant coach itu luar biasa sih. ilmu yang di kasih selalu bermanfaat mau di valorant/RL, di vior jg belajarnya enak, mudah di pahami walaupun mental sering goyang sampai kebawa mimpi juga ye kan. bangga jadi bagian dari vior!"</p>
+                        <p class="font-semibold">- Chavi</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="bg-gradient-to-r from-blue-600 to-indigo-800 text-white py-16 relative">
+            <!-- Background image -->
+            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('fradis.png');"></div>
+            <!-- Gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-800 to-indigo-800 opacity-70"></div>
+            <!-- Content -->
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
+                        <iframe src="https://discord.com/widget?id=1005507894717993020&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    </div>
+                    <div class="md:w-1/2 text-center">
+                        <h2 class="text-4xl font-bold mb-4 text-yellow-300">Ready to Level Up Your Game?</h2>
+                        <p class="text-xl mb-8 text-gray-200 font-bold">Join VIOR Academy today and start your journey in the competitive scene!</p>
+                        <a href="https://discord.gg/QFmu86a8Ak" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-4 bg-white text-blue-900 text-lg font-bold rounded-full hover:bg-blue-100 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] transform hover:-translate-y-1">Join Our Community</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="mb-4 md:mb-0">&copy; 2024 VIOR Tower Community. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="https://x.com/ViOrTower" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-400 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@VernalisOrion" target="_blank" rel="noopener noreferrer" class="text-white hover:text-red-500 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://discord.gg/QFmu86a8Ak" target="_blank" rel="noopener noreferrer" class="text-white hover:text-indigo-400 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add this button just before the closing </body> tag -->
+    <button id="scrollToTopBtn" class="fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full opacity-70 hover:opacity-100 transition-opacity duration-300 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
